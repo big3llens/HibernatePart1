@@ -13,7 +13,7 @@ public class ProductDao {
     public static void main(String[] args) {
         init();
         saveProduct("Meat", 90);
-//        getProduct(3);
+//        getProduct(1);
 //        updateProduct(1, "Apple", 40);
 //        removeProduct(6);
 //        findAll();
@@ -23,7 +23,6 @@ public class ProductDao {
 
     public static void init(){
         factory = new Configuration().configure("ProductDao/hibernate.conf.xml").buildSessionFactory();
-        return ;
     }
 
     public static void saveProduct(String name, int cost){
